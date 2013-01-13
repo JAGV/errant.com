@@ -183,6 +183,18 @@ textarea {
     display: block;
 }
 
+/**
+ * Social Icons
+ */
+
+ .social-icons {
+    font-family: 'SSSocialCircle';
+    line-height: 0.4;
+ }
+
+
+
+
 /* ==========================================================================
    
    $STRUCTURE
@@ -193,20 +205,16 @@ textarea {
  * Main Navigation
  */
 
-.main-nav {
-    float: left;
-}
-
 .main-nav > li {
-    margin-right: 1em;
+    margin-left: 1em;
 }
 
-.logo {
-    float: left;
+.main-nav > li:first-child {
+    margin-left: 0;
 }
 
-.header {
-}
+
+
 
 
 /* ==========================================================================
@@ -221,6 +229,7 @@ textarea {
 
 
 
+
 /* ==========================================================================
    
    $MEDIA QUIERIES
@@ -232,12 +241,43 @@ textarea {
  * This is simply to show the main navigation *will* change
  */
 
-@media screen and (min-width: 410px) { /* this width is arbitrary */
+@media screen and (min-width: 550px) { /* this width is arbitrary */
+    /**
+     * Experiments for full layout
+
+    .logo {
+        float: left;
+    }
     .main-nav {
         float: right;
     }
+    .social-nav {
+        float: right;
+    }
+     */
 }/* end 410px media query */
 
+
+
+
+/* ==========================================================================
+   H5BP MEDIA QUEIRIES
+
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
 
 
 
@@ -342,23 +382,6 @@ textarea {
 
 .clearfix {
     *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
