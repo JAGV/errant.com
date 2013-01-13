@@ -1,3 +1,21 @@
+/* ==========================================================================
+   
+   $CONTENTS
+   
+   ========================================================================== */
+/**
+ * CONTENTS..............This is it +_+
+ * BASE STYLES...........Base styles included with H5BP https://github.com/h5bp/html5-boilerplate
+ * ALM VAISIUS...........Custom styles written by Justin Alm and Grey Vaisius
+ *
+ * OBJECTS...............Base elements that are super resuable
+ * STRUCTURE.............The layout of page elements
+ * STYLING...............The styling of all the page elements
+ *
+ * HELPER CLASSES........Classes to help with layouts, part of H5BP
+ */
+
+
 /*
  * HTML5 Boilerplate
  *
@@ -7,7 +25,9 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   
+   $BASE STYLES: OPINIONATED DEFAULTS
+   
    ========================================================================== */
 
 html,
@@ -22,6 +42,17 @@ body {
     font-size: 1em;
     line-height: 1.4;
 }
+
+/**
+ * Added by Grey Vaisius
+ * Sets link underlines to be border bottom
+ * so they won't cut off descenders
+ */
+
+ a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+ }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -58,6 +89,13 @@ hr {
 
 img {
     vertical-align: middle;
+
+    /**
+     * Added by Grey Vaisius
+     * These are to accomodate responsive design
+     */
+    max-width: 100%;
+    height: auto;
 }
 
 /*
@@ -78,9 +116,9 @@ textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
+/**
+ * Chrome Frame Prompt  
+ */
 
 .chromeframe {
     margin: 0.2em 0;
@@ -89,28 +127,124 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
-   Author's custom styles
+   
+   $ALM/VAISIUS CUSTOM STYLES
+   
    ========================================================================== */
 
 
+/* ==========================================================================
+   
+   $OBJECTS
+
+   ========================================================================== */
+
+/**
+ * Page Container
+ */
+
+.container {
+    margin: 0 auto;
+    max-width: 75em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+/**
+ * Generic Navigation styles
+ */
+
+.nav {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+.nav > li, .nav > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.nav a {
+    border-bottom: none;
+}
+
+/**
+ * `.nav-stacked` extends `.nav`, stacks the navigation list
+ *
+ */
+.nav--stacked > li {
+    display: list-item;
+}
+.nav--stacked > li > a {
+    display: block;
+}
+
+/* ==========================================================================
+   
+   $STRUCTURE
+   
+   ========================================================================== */
+
+/**
+ * Main Navigation
+ */
+
+.main-nav {
+    float: left;
+}
+
+.main-nav > li {
+    margin-right: 1em;
+}
+
+.logo {
+    float: left;
+}
+
+.header {
+}
+
+
+/* ==========================================================================
+   
+   $STYLING
+   
+   ========================================================================== */
+
+.blog-roll .post {
+    border-bottom: 1px solid;
+}
 
 
 
+/* ==========================================================================
+   
+   $MEDIA QUIERIES
+   
+   ========================================================================== */
 
+/**
+ * This media query is based on nothing right now
+ * This is simply to show the main navigation *will* change
+ */
 
-
-
-
-
-
-
+@media screen and (min-width: 410px) { /* this width is arbitrary */
+    .main-nav {
+        float: right;
+    }
+}/* end 410px media query */
 
 
 
 
 /* ==========================================================================
-   Helper classes
+   
+   $HELPER CLASSES
+   
    ========================================================================== */
 
 /*
@@ -156,7 +290,7 @@ textarea {
     width: 1px;
 }
 
-/*
+/**
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
@@ -171,7 +305,7 @@ textarea {
     width: auto;
 }
 
-/*
+/**
  * Hide visually and from screenreaders, but maintain layout
  */
 
@@ -179,7 +313,7 @@ textarea {
     visibility: hidden;
 }
 
-/*
+/**
  * Clearfix: contain floats
  *
  * For modern browsers
