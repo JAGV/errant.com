@@ -20,17 +20,18 @@
  */
 
 
-
 // Base and Normalize
 @import 'parts/normalize';
 @import 'parts/base';
-//@import 'parts/vars';
+@import 'parts/vars';
 
 // Objects
 @import 'parts/objects/objects';
 
 // Structure
-@import 'parts/structure/main-nav';
+@import 'susy';
+@import 'parts/structure/set-grid';
+@import 'parts/structure/structure';
 @import 'parts/structure/small-media';
 
 // Styling
