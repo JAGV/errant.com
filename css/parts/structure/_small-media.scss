@@ -1,0 +1,46 @@
+/* ==========================================================================
+   
+   $MEDIA QUIERIES
+   
+   ========================================================================== */
+
+/**
+ * This media query is based on nothing right now
+ * This is simply to show the main navigation *will* change
+ */
+
+@media screen and (min-width: 550px) { /* this width is arbitrary */
+    /**
+     * Experiments for full layout
+
+    .logo {
+        float: left;
+    }
+    .main-nav {
+        float: right;
+    }
+    .social-nav {
+        float: right;
+    }
+     */
+}/* end 410px media query */
+
+
+/* ==========================================================================
+   H5BP MEDIA QUEIRIES
+
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
