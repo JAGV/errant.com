@@ -47,24 +47,37 @@
     margin-bottom: 0;
   }
   .post {
-    padding-bottom: 1em;
+    padding-bottom: 0.75em;
     margin-bottom: 1em;
   }
 
 
 /**
- * Article Cover
+ * Article
  */
- .article-cover {
+ .article--cover {
     position: relative;
  }
 
- .article-title {
+ .article--title {
     position: absolute;
-    top: 25%;
-    right: 0;
-    bottom: auto;
-    left: 0;
+    top: 50%;
+    vertical-align: center;
+    right: 15%;
+    bottom: 25%;
+    left: 15%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: -25%;
+ }
+
+ .article--body {
+    max-width: 40em;
+    margin: 0 auto;
+ }
+
+ .share-page {
+    margin-top: 1em;
  }
 
 
@@ -72,6 +85,7 @@
   * Footer
   */
   .footer {
+    margin-top: 1em;
     padding-bottom: 2em;
   }
 

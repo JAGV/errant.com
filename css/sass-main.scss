@@ -38,9 +38,12 @@
 @import 'parts/structure/structure';
 @import 'parts/structure/typography';
 @import 'parts/structure/small-media';
+@import 'parts/structure/midsized-media';
 
 // Styling
+@import 'parts/styling/page';
 @import 'parts/styling/blog-roll';
+@import 'parts/styling/article';
 
 // Helper Classes
 @import 'parts/helper-classes';
