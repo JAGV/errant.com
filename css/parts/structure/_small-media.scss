@@ -14,50 +14,38 @@
      * Experiments for full layout
     */
 
-    /**
-     * Top Logo
-     */
-
-    .logo {
-      @include span-columns(6,12);
-    }
-
    /**
     * Main Navigation
     */
-    
-    .main-nav {
-      @include span-columns(6 omega, 12);
+    .main-nav, .social-nav {
       text-align: right;
       margin-top: 0;
     }
 
 
     /**
-     * Social Navigation
-     */
-
-    .social-nav {
-      @include span-columns(6 omega, 12);
-      text-align: right;
-    }
-
-
-    /**
      * Experimental grid
      */
-
      .sm-full {
       @include span-columns(12 omega, 12);
      }
-     
+
     .sm-half {
       @include span-columns(6, 12);
+    }
+
+    .sm-quarter {
+      @include span-columns(3,12);
+    }
+
+    .sm-qarter:last-child {
+      @include omega;
     }
 
     .last {
       @include omega;
     }
+
 }/* end 410px media query */
 
 

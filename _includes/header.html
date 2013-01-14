@@ -1,27 +1,33 @@
 <div class="container">
 
-<div class="header">
+<div class="header  full-width">
   
-<div class="logo">
-    <a href="/"><img src="http://fakeimg.pl/550x100/?text=errant"></a>
-</div><!-- .logo -->
+<div class="sm-half">
+    <div class="logo">
+        <a href="/"><img src="http://fakeimg.pl/550x100/?text=errant"></a>
+    </div><!-- .logo -->
+</div><!-- .sm-half -->
 
 
-<ul class="nav  main-nav">
-  <!--
-    -- I'm not completely sure what `errants` was supposed to refer to
-    -- or where it should lead
-    -->
-    <li><a href="#">errants</a></li>
+<div class="sm-half  last">
     
-    <li><a href="{{ site.url }}/issues">issues</a></li>
-    <li><a href="{{ site.url }}/about">about</a></li>
-</ul><!-- .main-nav -->
+    <ul class="nav  main-nav  clearfix">
+      <!--
+        -- I'm not completely sure what `errants` was supposed to refer to
+        -- or where it should lead
+        -->
+        <li><a href="#">errants</a></li>
+        
+        <li><a href="{{ site.url }}/issues">issue toc</a></li>
+        <li><a href="{{ site.url }}/about">about</a></li>
+    </ul><!-- .main-nav -->
 
-<ul class="nav  social-nav  social-icons">
-    <li><a href="#" alt="Facebook">&#62992;</a></li>
-    <li><a href="#" alt="Twitter">&#62993;</a></li>
-</ul><!-- .social-nav -->
+    <ul class="nav  social-nav  social-icons  clearfix">
+        <li><a href="#" alt="Facebook">&#62992;</a></li>
+        <li><a href="#" alt="Twitter">&#62993;</a></li>
+    </ul><!-- .social-nav -->
+    
+</div><!-- .sm-half  last -->
 
 
-</div><!-- .header -->
+</div><!-- .header  full-width -->

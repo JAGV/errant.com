@@ -22,75 +22,102 @@
     <body>
 <div class="container">
 
-<div class="header">
+<div class="header  full-width">
   
-<div class="logo">
-    <a href="/"><img src="http://fakeimg.pl/550x100/?text=errant"></a>
-</div><!-- .logo -->
+<div class="sm-half">
+    <div class="logo">
+        <a href="/"><img src="http://fakeimg.pl/550x100/?text=errant"></a>
+    </div><!-- .logo -->
+</div><!-- .sm-half -->
 
 
-<ul class="nav  main-nav">
-  <!--
-    -- I'm not completely sure what `errants` was supposed to refer to
-    -- or where it should lead
-    -->
-    <li><a href="#">errants</a></li>
+<div class="sm-half  last">
     
-    <li><a href="/issues">issues</a></li>
-    <li><a href="/about">about</a></li>
-</ul><!-- .main-nav -->
+    <ul class="nav  main-nav  clearfix">
+      <!--
+        -- I'm not completely sure what `errants` was supposed to refer to
+        -- or where it should lead
+        -->
+        <li><a href="#">errants</a></li>
+        
+        <li><a href="/issues">issue toc</a></li>
+        <li><a href="/about">about</a></li>
+    </ul><!-- .main-nav -->
 
-<ul class="nav  social-nav  social-icons">
-    <li><a href="#" alt="Facebook">&#62992;</a></li>
-    <li><a href="#" alt="Twitter">&#62993;</a></li>
-</ul><!-- .social-nav -->
+    <ul class="nav  social-nav  social-icons  clearfix">
+        <li><a href="#" alt="Facebook">&#62992;</a></li>
+        <li><a href="#" alt="Twitter">&#62993;</a></li>
+    </ul><!-- .social-nav -->
+    
+</div><!-- .sm-half  last -->
 
 
-</div><!-- .header -->
+</div><!-- .header  full-width -->
     
-    <img src="http://fakeimg.pl/1250x500/"/>
+    <div class="article  full-width">
     
-    <div class="article-title">
-        <h1>post number 1</h1>
-        <h2>Author McWriter</h2>
-    </div><!-- .article-title -->
+    <div class="article-cover">
+        <img src="http://fakeimg.pl/1250x500/" width="1250" height="500" />
+        
+        <div class="article-title">
+            <h1>post number 1</h1>
+            <h2>Author McWriter</h2>
+            <p class="post-date">05 Jan 2012</p>
+        </div><!-- .article-title -->
+    </div><!-- .article-cover -->
     
-    <h4>Share this piece</h4>
-<ul class="nav  social-nav  social-icons">
-    <li><a href="#" alt="Facebook">&#62992;</a></li>
-    <li><a href="#" alt="Twitter">&#62993;</a></li>
-</ul><!-- .social-nav -->
+    <div class="share-page">
+  <h4>Share this piece</h4>
+  <ul class="nav  social-icons">
+      <li><a href="#" alt="Facebook">&#62992;</a></li>
+      <li><a href="#" alt="Twitter">&#62993;</a></li>
+  </ul><!-- .social-nav -->
+</div><!-- .share-page -->
     
     <h2 id='this_is_the_first_article_with_the_first_heading'>This is the first article, with the first heading</h2>
 
 <p>Bacon ipsum dolor sit amet pastrami ribeye turducken short loin biltong. Kielbasa t-bone ham hock short ribs, sausage ribeye prosciutto salami sirloin. Pancetta rump pork loin, prosciutto short loin bacon pork pork chop andouille jerky t-bone meatball shank. Meatloaf fatback pork short loin andouille. Sausage pork chop prosciutto tail turkey ball tip. Jowl shoulder jerky beef ribs hamburger bacon, short ribs leberkase flank meatball filet mignon spare ribs brisket sausage. Swine meatball pancetta t-bone shoulder, corned beef frankfurter pork.</p>
 
-    <h4>Share this piece</h4>
-<ul class="nav  social-nav  social-icons">
-    <li><a href="#" alt="Facebook">&#62992;</a></li>
-    <li><a href="#" alt="Twitter">&#62993;</a></li>
-</ul><!-- .social-nav -->
-    
-    <a href="/">Back Home</a>
+    <div class="share-page">
+  <h4>Share this piece</h4>
+  <ul class="nav  social-icons">
+      <li><a href="#" alt="Facebook">&#62992;</a></li>
+      <li><a href="#" alt="Twitter">&#62993;</a></li>
+  </ul><!-- .social-nav -->
+</div><!-- .share-page -->
     
     <h4>Other articles in this issue</h4>
-    <ul class="blog-roll  nav">
+    <div class="full-width">
+        <ul class="blog-roll  nav  nav--stacked">
+        
+        
+        <div class="sm-quarter">
+        
+        <li class="post">
+            <p class="post-date">06 Jan 2012</p>
+            <h2><a href="/docs/post-2">post number 2</a></h2>
+            <p class="excerpt">This is the second post, about bacon..</p>
+        </li><!-- .post -->
+        </div><!-- .sm-quarter -->
+        
+        
+        
+        <div class="sm-quarter">
+        
+        <li class="post">
+            <p class="post-date">05 Jan 2012</p>
+            <h2><a href="/docs/post-1">post number 1</a></h2>
+            <p class="excerpt">This is the first post, this is an excerpt..</p>
+        </li><!-- .post -->
+        </div><!-- .sm-quarter -->
+        
+        
+        </ul><!-- .blog-roll -->
+    </div><!-- .full-width -->
     
-    <li class="post">
-        <p class="post-date">06 Jan 2012</p>
-        <h2><a href="/docs/post-2">post number 2</a></h2>
-        <p class="summary">This is the second post, about bacon..</p>
-    </li><!-- .post -->
-    
-    <li class="post">
-        <p class="post-date">05 Jan 2012</p>
-        <h2><a href="/docs/post-1">post number 1</a></h2>
-        <p class="summary">This is the first post, this is an excerpt..</p>
-    </li><!-- .post -->
-    
-    </ul><!-- .blog-roll -->
+    </div><!-- .article -->
 
-    <div class="footer">
+    <div class="footer  full-width">
         
         <p>Errant Magazine &copy; 2012</p>
         
@@ -103,7 +130,7 @@
             <li><a href="#" alt="Twitter">&#62993;</a></li>
         </ul><!-- .social-nav -->
     
-    </div><!-- .footer -->
+    </div><!-- .footer  full-width -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
