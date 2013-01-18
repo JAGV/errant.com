@@ -1,0 +1,50 @@
+// Main Sass file, preparing for the possiblity of a switch to Sass
+
+
+/* ==========================================================================
+   
+   $CONTENTS
+   
+   ========================================================================== */
+/**
+ * CONTENTS..............This is it +_+
+ * NORMALIZE.............Normalize.css by Nicolas Gallagher http://necolas.github.com/normalize.css/
+ * BASE STYLES...........Base styles included with H5BP https://github.com/h5bp/html5-boilerplate
+ * VARIABLES.............Sass variables used throughout the site
+ * ALM VAISIUS...........Custom styles written by Justin Alm and Grey Vaisius
+ *
+ * OBJECTS...............Base elements that are super resuable
+ *
+ * STRUCTURE.............The layout of page elements
+ * TYPOGRAPHY............The structural typography that builds the page, rythm
+ *
+ * STYLING...............The styling of all the page elements
+ *
+ * HELPER CLASSES........Classes to help with layouts, part of H5BP
+ */
+
+
+// Base and Normalize
+@import 'parts/normalize';
+@import 'parts/base';
+@import 'parts/vars';
+
+// Objects
+@import 'parts/objects/objects';
+
+// Structure
+@import 'susy';
+@import 'parts/structure/set-grid';
+@import 'parts/structure/structure';
+@import 'parts/structure/typography';
+@import 'parts/structure/small-media';
+@import 'parts/structure/midsized-media';
+
+// Styling
+@import 'parts/styling/page';
+// THIS FILE IS MISSING NOW
+//@import 'parts/styling/blog-roll';
+@import 'parts/styling/article';
+
+// Helper Classes
+@import 'parts/helper-classes';
