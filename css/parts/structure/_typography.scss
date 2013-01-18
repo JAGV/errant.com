@@ -1,0 +1,61 @@
+/* ==========================================================================
+   
+   $TYPOGRAPHY
+   
+   ========================================================================== */
+
+/**
+ * Basic Header Spacing
+ */
+ h1:first-child, h2:first-child,
+ h3:first-child, h4:first-child,
+ h5:first-child, h6:first-child {
+  margin-top: 0;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+ }
+
+/**
+ * Paragraph Basics
+ */
+
+/**
+ * Post Styles
+ */
+ .post h2 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+ }
+ .post-date {
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+ .excerpt {
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+/**
+ * Article Title
+ */
+ .article--title {
+    text-align: center
+ }
+
+ .article--title h1, .article--title h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+ }
+
+/**
+ * Share title
+ */
+ .share-page {
+  text-align: center;
+ }
+ .share-page h4 {
+    margin-bottom: 0;
+ }
+

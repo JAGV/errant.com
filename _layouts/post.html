@@ -1,6 +1,7 @@
 {% include top.html %}
 {% include header.html %}
     
+<<<<<<< HEAD
     
     <img src="{{ page.image }}"/>
     
@@ -9,23 +10,51 @@
         <h2>{{ page.author }}</h2>
     </div><!-- .article-title -->
     
+=======
+    <div class="article  full-width">
+    
+    <div class="article--cover">
+        <img src="{{ page.image }}" width="1250" height="500" />
+        
+        <div class="article--title">
+            <h1>{{ page.title }}</h1>
+            <h2>{{ page.author }}</h2>
+            <p class="post-date">{{ page.date | date_to_string }}</p>
+        </div><!-- .article-title -->
+    </div><!-- .article-cover -->
+    
+    <div class="article--body">
+>>>>>>> sass/oocss
     {% include share.html %}
     
     {{ content }}
 
     {% include share.html %}
-    
-    <a href="/">Back Home</a>
+    </div><!-- .article--body -->
     
     <h4>Other articles in this issue</h4>
-    <ul class="blog-roll  nav">
-    {% for post in site.posts %}
-    <li class="post">
-        <p class="post-date">{{ post.date | date_to_string }}</p>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p class="summary">{{ post.excerpt }}</p>
-    </li><!-- .post -->
-    {% endfor %}
-    </ul><!-- .blog-roll -->
+    <div class="full-width">
+        <ul class="blog-roll  nav  nav--stacked">
+        {% for post in site.posts limit:4 %}
+        
+        <div class="sm-half  mm-quarter">
+        
+        <li class="post  other--post">
+            <p class="post-date">{{ post.date | date_to_string }}</p>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            
+            <a href="{{ post.url }}">
+            <img src="{{ post.thumbnail }}"  width="200" height="200" />
+            </a>
+            
+            <p class="excerpt">{{ post.excerpt }}</p>
+        </li><!-- .post -->
+        </div><!-- .sm-quarter -->
+        
+        {% endfor %}
+        </ul><!-- .blog-roll -->
+    </div><!-- .full-width -->
+    
+    </div><!-- .article -->
 
 {% include footer.html %}

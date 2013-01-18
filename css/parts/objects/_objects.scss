@@ -1,0 +1,58 @@
+/* ==========================================================================
+   
+   $OBJECTS
+
+   ========================================================================== */
+
+/**
+ * Page Container
+ */
+
+.container {
+    margin: 0 auto;
+    max-width: 75em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+/**
+ * Generic Navigation styles
+ */
+
+.nav {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+.nav > li, .nav > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.nav a {
+    border-bottom: none;
+}
+
+/**
+ * `.nav-stacked` extends `.nav`, stacks the navigation list
+ *
+ */
+.nav--stacked > li {
+    display: list-item;
+}
+.nav--stacked > li > a {
+    display: block;
+}
+
+/**
+ * Social Icons
+ */
+
+ .social-icons {
+    font-family: 'SSSocialCircle';
+    line-height: 0.4;
+ }
+
+ 

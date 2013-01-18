@@ -1,0 +1,100 @@
+/* ==========================================================================
+   
+   $STRUCTURE
+   
+   ========================================================================== */
+
+
+/**
+ * Container 
+ */
+ .container {
+    @include container;
+ }
+
+
+/**
+ * Header 
+ */
+ .header {
+    padding-top: 1em;
+    padding-bottom: 2em;
+ }
+
+
+/**
+ * Main Navigation
+ */
+
+ .main-nav > li {
+    margin-left: 1em;
+ }
+
+ .main-nav > li:first-child {
+    margin-left: 0;
+ }
+
+ .social-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ /**
+  * Blog Roll
+  */
+  .blog-roll {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .post {
+    padding-bottom: 0.75em;
+    margin-bottom: 1em;
+  }
+
+
+/**
+ * Article
+ */
+ .article--cover {
+    position: relative;
+ }
+
+ .article--title {
+    position: absolute;
+    top: 50%;
+    vertical-align: center;
+    right: 15%;
+    bottom: 25%;
+    left: 15%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: -25%;
+ }
+
+ .article--body {
+    max-width: 40em;
+    margin: 0 auto;
+ }
+
+ .share-page {
+    margin-top: 1em;
+ }
+
+
+ /**
+  * Footer
+  */
+  .footer {
+    margin-top: 1em;
+    padding-bottom: 2em;
+  }
+
+
+/**
+ * Experimental Grid
+ */
+ .full-width {
+    @include span-columns(12 omega, 12);
+ }
+
+
