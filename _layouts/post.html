@@ -1,21 +1,16 @@
 {% include top.html %}
 {% include header.html %}
     
-    <div class="article-title">
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.author }}</h2>
-    </div><!-- .article-title -->
-    
     <div class="article  full-width">
     
     <div class="article--cover">
-        <img src="{{ page.image }}" width="1250" height="500" />
         
         <div class="article--title">
             <h1>{{ page.title }}</h1>
             <h2>{{ page.author }}</h2>
             <p class="post-date">{{ page.date | date_to_string }}</p>
         </div><!-- .article-title -->
+        <img src="{{ page.image }}" width="1250" height="500" />
     </div><!-- .article-cover -->
     
     <div class="article--body">
