@@ -9,6 +9,6 @@
 
 # sass --watch sass-main.scss:sass-main.min.css --style compressed
 
-compass watch & jekyll
+compass watch css & jekyll
 
 exit 0
