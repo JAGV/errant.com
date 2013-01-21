@@ -35,6 +35,12 @@
     border-bottom: none;
 }
 
+.social-icons li a {
+    font-family: 'SSSocialCircle';
+    margin: 0.75em 0 0 0;
+    font-size: 1.75em;
+}
+
 /**
  * `.nav-stacked` extends `.nav`, stacks the navigation list
  *
@@ -52,7 +58,11 @@
 
  .social-icons {
     font-family: 'SSSocialCircle';
-    line-height: 0.4;
+    line-height: 1;
+ }
+
+ .logo img {
+    max-height: 70px;
  }
 
  

@@ -3,19 +3,23 @@ layout: default
 title: Errant Issues
 ---
     
-<h1>Errant Issues</h1>
+<h1>Previous Issues of Errant</h1>
   
 <ul class="blog-roll  nav  nav--stacked">
   {% for post in site.posts %}
   <li class="post">
+    <div class="post-thumb">
     
     <a href="{{ post.url }}">
     <img src="{{ post.thumbnail }}" />
     </a>
-    
+    </div>
+
     <p class="post-date">{{ post.date | date_to_string }}</p>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="excerpt">{{ post.excerpt }}</p>
+
+    <div class="clearfix"></div>
     
   </li><!-- .post -->
   {% endfor %}

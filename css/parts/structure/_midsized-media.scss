@@ -12,7 +12,7 @@
     */
     .main-nav, .social-nav {
       text-align: right;
-      margin-top: 0;
+      margin: 0.5em 0 0 0;
     }
 
     .article--title {
@@ -24,6 +24,9 @@
     margin-top: 0;
     }
 
+    .post-thumb {
+      float: left;
+    }
     /**
      * Experimental grid
      */
