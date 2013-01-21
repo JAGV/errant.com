@@ -56,10 +56,12 @@
     padding-bottom: 0.75em;
     margin-bottom: $spacing-unit;
   }
-  .post-thumb {
-    margin: 0 $spacing-unit 0 0;
+  .post img {
+    width: 100%;
+    height: auto;
   }
 
+  
 /**
  * Article
  */

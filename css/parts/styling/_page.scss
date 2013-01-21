@@ -6,7 +6,7 @@
     border-bottom: 1px solid $light-grey;
   }
 
- .logo {
+ .logo img {
     @include transition(all 0.75s);
     opacity: 1;
     &:hover {
@@ -14,6 +14,10 @@
     }
   }
 
+
+/**
+ * Stylings for typography
+ */
  .light-headline {
     text-align: center;
     color: $light-grey;
@@ -24,7 +28,11 @@
     font-style: italic;
   }
 
-  .one-edge-shadow {
+
+/**
+ * 
+ */
+  .bottom-shadow {
     @include box-shadow(0 8px 6px -6px $light-grey);
   }
 
