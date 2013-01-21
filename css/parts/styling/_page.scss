@@ -2,17 +2,35 @@
  * Header
  */
  .header {
- }
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+  }
 
-.one-edge-shadow {
-	-webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-}
+ .logo {
+    @include transition(all 0.75s);
+    opacity: 1;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 
- /**
-  * Footer
-  */
-  .footer {
-      border-top: 1px solid;
+ .light-headline {
+    text-align: center;
+    color: $light-grey;
+    font-weight: normal;
+  }
+
+  .post-date {
+    font-style: italic;
+  }
+
+  .one-edge-shadow {
+    @include box-shadow(0 8px 6px -6px $light-grey);
+  }
+
+/**
+ * Footer
+ */
+ .footer {
+    border-top: 1px solid;
   }

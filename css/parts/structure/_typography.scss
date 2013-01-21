@@ -13,6 +13,10 @@
   margin-top: 0;
  }
 
+ h1, h2 {
+  line-height: 1.2;
+ }
+
  h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
  }
@@ -29,12 +33,16 @@
     margin-bottom: 0.25em;
  }
  .post-date {
-    margin-top: 0.75em;
+    margin-top: $half-spacing-unit;
     margin-bottom: 0;
  }
  .excerpt {
     margin-top: 0;
     margin-bottom: 0;
+ }
+
+ .blog-roll {
+    //text-align: center;
  }
 
 /**

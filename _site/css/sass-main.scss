@@ -23,6 +23,9 @@
  * HELPER CLASSES........Classes to help with layouts, part of H5BP
  */
 
+// Compass Parts
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
 
 // Base and Normalize
 @import 'parts/normalize';

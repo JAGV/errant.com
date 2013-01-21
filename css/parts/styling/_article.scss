@@ -4,6 +4,12 @@
  .article--title {
     border-top: 1px solid;
     border-bottom: 1px solid;
+    h2 {
+      font-weight: normal;
+    }
+ }
 
-    background: rgba(255, 255, 255, 0.5);
+ .article--body p:last-child:after {
+  color: $brand-secondary;
+  content: " \2766"
  }

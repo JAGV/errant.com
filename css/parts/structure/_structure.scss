@@ -10,6 +10,7 @@
  */
  .container {
     @include container;
+    margin-top: $spacing-unit;
  }
 
 
@@ -17,8 +18,9 @@
  * Header 
  */
  .header {
-    padding-top: 1em;
-    padding-bottom: 2em;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    margin-bottom: 2em;
  }
 
 
@@ -26,8 +28,12 @@
  * Main Navigation
  */
 
+  .logo img {
+    max-height: 3em;
+ }
+
  .main-nav > li {
-    margin-left: 1em;
+    margin-left: $half-spacing-unit;
  }
 
  .main-nav > li:first-child {
@@ -48,10 +54,10 @@
   }
   .post {
     padding-bottom: 0.75em;
-    margin-bottom: 1em;
+    margin-bottom: $spacing-unit;
   }
   .post-thumb {
-    margin: 0 1em 0 0;
+    margin: 0 $spacing-unit 0 0;
   }
 
 /**
@@ -62,22 +68,18 @@
  }
 
  .article--title {
-    position: absolute;
-    top: 15%;
-    right: 15%;
-    bottom: 15%;
-    left: 15%;
-    padding-top: 0em;
-    padding-bottom: 1em;
+    position: relative;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
  }
 
  .article--body {
     max-width: 40em;
-    margin: 1em auto 0 auto;
+    margin: $spacing-unit auto 0 auto;
  }
 
  .share-page {
-    margin-top: 1em;
+    margin-top: $spacing-unit;
  }
 
 
@@ -85,7 +87,7 @@
   * Footer
   */
   .footer {
-    margin-top: 1em;
+    margin-top: $spacing-unit;
     padding-bottom: 2em;
   }
 
