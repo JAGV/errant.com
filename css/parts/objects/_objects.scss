@@ -10,9 +10,10 @@
 
 .container {
     margin: 0 auto;
-    max-width: 75em;
+    max-width: 60em;
     padding-left: 1.5em;
     padding-right: 1.5em;
+    margin-top: 2em;;
 }
 
 /**
@@ -40,7 +41,7 @@
     
     li a {
         font-family: 'SSSocialCircle';
-        margin: 0.75em 0 0 0;
+        margin-top: 0.75em;
         font-size: 1em;
     }
 }

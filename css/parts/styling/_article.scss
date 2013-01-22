@@ -1,13 +1,6 @@
 /**
  * Article styles
  */
- .article--title {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    h2 {
-      font-weight: normal;
-    }
- }
 
  .share-page {
     @include transition(all 0.75s);

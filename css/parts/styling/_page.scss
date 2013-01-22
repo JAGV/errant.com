@@ -1,7 +1,7 @@
 /**
  * Header
  */
- .main-nav {
+ .header .main-nav {
     border-top: 1px solid $light-grey;
     border-bottom: 1px solid $brand-color;
   }
@@ -24,5 +24,7 @@
 /**
  * Footer
  */
- .footer {
+ .footer .main-nav {
+    border-top: 1px solid $brand-color;
+    border-bottom: 1px solid $light-grey;
   }

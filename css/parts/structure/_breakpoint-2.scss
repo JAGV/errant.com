@@ -8,11 +8,24 @@
      * Experiments for full layout
     */
     .article--title {
+      
+      .article--name {
+        border-top: 1px solid;  
+        padding-top: $half-spacing-unit;
+      }
+      
+      .post-date {
+        border-bottom: 1px solid;
+        padding-bottom: $half-spacing-unit;
+      }
+      
+      padding: 2em;
       position: absolute;
-      bottom: 15%;
+      top: 25%;
       right: 15%;
       left: 15%;
-      color: $rev;
+      //color: $rev;
+      background-color: rgba(255, 255, 255, 0.6);
     }
 
 }/* end 60em media query */

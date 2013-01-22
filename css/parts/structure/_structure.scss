@@ -5,15 +5,6 @@
    ========================================================================== */
 
 /**
- * Container 
- */
- .container {
-    max-width: 60em;
-    margin-top: 2em;
- }
-
-
-/**
  * Header 
  */
  .header {
@@ -25,8 +16,10 @@
 /**
  * Main Navigation
  */
-
-  .logo img {
+ .logo {
+    float: left;
+ }
+ .logo img {
     max-height: 3em;
  }
 
@@ -44,12 +37,9 @@
     margin-left: 0;
  }
  .social-nav {
+    float: right;
     margin-top: $half-spacing-unit;
     margin-bottom: $half-spacing-unit;
- }
- .social-nav {
-    margin-top: 0;
-    margin-bottom: 0;
  }
 
  /**
@@ -98,6 +88,11 @@
   .footer {
     margin-top: $spacing-unit;
     padding-bottom: 2em;
+  }
+
+  .copyright {
+    float: left;
+    margin-top: 0;
   }
 
 
