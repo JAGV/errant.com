@@ -23,6 +23,7 @@
  
  .main-nav {
     text-align: center;
+    font-size: 1.125em;
  }
  .social-nav {
     text-align: right;
@@ -48,8 +49,21 @@
     margin-top: 0;
     margin-bottom: 0;
  }
- .blog-roll {
-    //text-align: center;
+ .home--blog-roll {
+    text-align: center;
+
+    .post:after {
+      color: $light-grey;
+      content: ". . .";
+    }
+
+    .post:first-child {
+      font-size: 180%;
+      &:after {
+        content: "\2235";
+      }
+    }
+
  }
 
 

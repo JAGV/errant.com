@@ -1,4 +1,17 @@
 /**
+ * Container
+ */
+ html {
+  background-color: 
+    lighten($light-grey, 20%);
+ }
+
+ .container {
+    border: 1px solid $light-grey;
+    background: $rev;
+ }
+
+/**
  * Header
  */
  .header .main-nav {
@@ -15,7 +28,7 @@
   }
 
 /**
- * 
+ * Style Helpers
  */
   .bottom-shadow {
     @include box-shadow(0 8px 6px -6px $light-grey);
