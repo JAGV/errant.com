@@ -36,18 +36,20 @@
 @import 'parts/objects/objects';
 
 // Structure
-@import 'susy';
 @import 'parts/structure/set-grid';
 @import 'parts/structure/structure';
-@import 'parts/structure/typography';
-@import 'parts/structure/small-media';
-@import 'parts/structure/midsized-media';
+@import 'parts/structure/breakpoint-1';
+@import 'parts/structure/breakpoint-2';
+@import 'parts/structure/breakpoint-3';
 
 // Styling
+@import 'parts/styling/typography';
 @import 'parts/styling/page';
-// THIS FILE IS MISSING NOW
-//@import 'parts/styling/blog-roll';
 @import 'parts/styling/article';
 
 // Helper Classes
 @import 'parts/helper-classes';
+
+
+
+

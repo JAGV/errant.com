@@ -1,7 +1,66 @@
 // Sets the document to use border-box as the box sizing model
-@include border-box-sizing;
+//@include border-box-sizing;
 
-$total-columns  : 12;             // a 12-column grid
-$column-width   : 5em;            // each column is 4em wide
-$gutter-width   : 1em;            // 1em gutters between columns
-$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+//$total-columns  : 12;             // a 12-column grid
+//$column-width   : 4em;            // each column is 4em wide
+//$gutter-width   : 1em;            // 1em gutters between columns
+//$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+
+/*
+Author  : Boon
+URL     : http://builtbyboon.com
+Twitter : http://twitter.com/mattberridge
+---------------------------------------*/
+
+/* -- Begin grids
+------------------------------------------------------------- */
+@import "proportional-grids.scss";
+
+/* -- Use this wrapper if you want to divide your columns -- */
+  
+.divide-bottom {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em; 
+}
+
+/* -- Use this wrapper if you want to block-out a column with padding 
+Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
+
+.island {
+  padding: 1.5em;
+  background-color: #ececec;
+
+  :last-child {
+    margin-bottom: 0; 
+  }
+  
+}
+    
+/* -- Setup grids with base class -- */   
+@include grids-init("col");
+
+/* -- Breakpoint (.bp1)
+------------------------------------------------------------- */      
+@media only screen and (min-width: 30em) {
+ 
+  @include grid-setup("bp1-col");
+    
+}
+   
+/* -- Breakpoint 2 (.bp2)
+------------------------------------------------------------- */      
+@media only screen and (min-width: 48em) {
+
+  @include grid-setup("bp2-col");
+    
+}
+
+/* -- Breakpoint 3 (.bp3)
+------------------------------------------------------------- */      
+@media only screen and (min-width: 60em) {
+
+  @include grid-setup("bp3-col");
+    
+}

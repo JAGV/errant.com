@@ -4,13 +4,12 @@
    
    ========================================================================== */
 
-
 /**
  * Container 
  */
  .container {
-    @include container;
-    margin-top: $spacing-unit;
+    max-width: 60em;
+    margin-top: 2em;
  }
 
 
@@ -20,7 +19,6 @@
  .header {
     padding-top: $spacing-unit;
     padding-bottom: $spacing-unit;
-    margin-bottom: 2em;
  }
 
 
@@ -32,14 +30,23 @@
     max-height: 3em;
  }
 
+ .main-nav {
+  margin-top: $spacing-unit;
+  padding-top: $half-spacing-unit;
+  padding-bottom: $half-spacing-unit;
+ }
  .main-nav > li {
     margin-left: $half-spacing-unit;
+    margin-right: $half-spacing-unit;
  }
 
  .main-nav > li:first-child {
     margin-left: 0;
  }
-
+ .social-nav {
+    margin-top: $half-spacing-unit;
+    margin-bottom: $half-spacing-unit;
+ }
  .social-nav {
     margin-top: 0;
     margin-bottom: 0;
@@ -92,13 +99,5 @@
     margin-top: $spacing-unit;
     padding-bottom: 2em;
   }
-
-
-/**
- * Experimental Grid
- */
- .full-width {
-    @include span-columns(12 omega, 12);
- }
 
 

@@ -1,10 +1,10 @@
 /*
 Syntax error: Undefined variable: "$brand-color".
-        on line 20 of /Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/parts/_base.scss
+        on line 25 of /Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/parts/_base.scss
         from line 29 of /Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/_site/sass-main.scss
 
 Backtrace:
-/Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/parts/_base.scss:20
+/Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/parts/_base.scss:25
 /Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/_site/sass-main.scss:29
 /Users/greyvy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/script/variable.rb:49:in `_perform'
 /Users/greyvy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.2/lib/sass/script/node.rb:40:in `perform'
@@ -87,4 +87,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$brand-color\".\A         on line 20 of /Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/parts/_base.scss\A         from line 29 of /Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/_site/sass-main.scss"; }
+  content: "Syntax error: Undefined variable: \"$brand-color\".\A         on line 25 of /Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/parts/_base.scss\A         from line 29 of /Users/greyvy/Documents/Freelance Work/2012/Errant (Chris Oke)/Creative/Website/errant.com/css/_site/sass-main.scss"; }

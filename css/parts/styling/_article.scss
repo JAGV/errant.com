@@ -9,11 +9,6 @@
     }
  }
 
- .article--body p:last-child:after {
-  color: $brand-secondary;
-  content: " \2766"
- }
-
  .share-page {
     @include transition(all 0.75s);
     opacity: 0.5;

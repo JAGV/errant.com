@@ -4,11 +4,13 @@ title: Errant Issues
 ---
     
 <h1 class="light-headline">Previous Issues of Errant</h1>
+
+<div class="grid-wrap">
   
 <ul class="blog-roll  nav  nav--stacked">
   {% for post in site.posts %}
   
-  <div class="sm-half  mm-quarter">
+  <div class="grid-col  bp1-col-one-half  bp2-col-one-quarter">
   <li class="post">
     <div class="post-thumb">
     <a href="{{ post.url }}">
@@ -25,3 +27,5 @@ title: Errant Issues
   
   {% endfor %}
 </ul><!-- .blog-roll -->
+
+</div><!-- .grid-wrap -->

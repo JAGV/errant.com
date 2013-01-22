@@ -20,6 +20,14 @@
  h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
  }
+ 
+ .main-nav {
+    text-align: center;
+ }
+ .social-nav {
+    text-align: right;
+  }
+ 
 
 /**
  * Paragraph Basics
@@ -40,10 +48,10 @@
     margin-top: 0;
     margin-bottom: 0;
  }
-
  .blog-roll {
     //text-align: center;
  }
+
 
 /**
  * Article Title
@@ -57,6 +65,20 @@
     margin-top: 0;
  }
 
+.article--body > p:last-child:after {
+  color: $brand-secondary;
+  content: " \2766"
+ }
+
+.light-headline {
+  color: $light-grey;
+  font-weight: normal;
+}
+
+.post-date {
+  font-style: italic;
+}
+
 /**
  * Share title
  */
@@ -66,4 +88,20 @@
  .share-page h4 {
     margin-bottom: 0;
  }
+ .social-icons li a {
+  color: $brand-color;
+  
+    &:hover {
+      color: $brand-secondary;
+    }
+ 
+ }
 
+blockquote {
+  font-style: italic;
+  font-size: 1.4em;
+  border-left: 5px solid $light-grey;
+  margin-left: 0;
+  padding-left: $spacing-unit;
+
+}

@@ -1,9 +1,9 @@
 /**
  * Header
  */
- .header {
+ .main-nav {
     border-top: 1px solid $light-grey;
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $brand-color;
   }
 
  .logo img {
@@ -13,21 +13,6 @@
       opacity: 0.5;
     }
   }
-
-
-/**
- * Stylings for typography
- */
- .light-headline {
-    text-align: center;
-    color: $light-grey;
-    font-weight: normal;
-  }
-
-  .post-date {
-    font-style: italic;
-  }
-
 
 /**
  * 
