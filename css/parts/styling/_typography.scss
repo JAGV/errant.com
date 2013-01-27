@@ -18,10 +18,12 @@
  }
 
  h1, h2, h3, h4, h5, h6 {
+  font-family: $brand-primary-face;
   margin-bottom: 0.5em;
  }
  
  .main-nav {
+    font-family: $brand-primary-face;
     text-align: center;
     font-size: 1.125em;
  }
