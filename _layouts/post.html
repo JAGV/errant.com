@@ -6,7 +6,7 @@
     <div class="article--cover">
         
         <div class="bottom-shadow">
-            <img src="{{ page.image }}" />
+            <img src="{{ site.url }}{{ page.image }}" />
         </div><!-- .bottom-shadow -->
         
         <div class="article--title">
@@ -34,13 +34,13 @@
         
         <li class="post  other--post">
             <div class="post-thumb">
-            <a href="{{ post.url }}">
-            <img src="{{ post.thumbnail }}" />
+            <a href="{{ site.url }}{{ post.url }}">
+            <img src="{{ site.url }}{{ post.thumbnail }}" />
             </a>
             </div><!-- .post-thumb -->
             
             <p class="post-date">{{ post.date | date_to_string }}</p>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
             <p class="excerpt">{{ post.excerpt }}</p>
         </li><!-- .post -->
         </div><!-- .sm-quarter -->

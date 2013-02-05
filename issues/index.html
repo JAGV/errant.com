@@ -15,9 +15,9 @@ title: Errant Issues
   <li class="post">
     
     <p class="post-date">{{ post.date | date_to_string }}</p>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
     <div class="post-thumb">
-    <a href="{{ post.url }}">
+    <a href="{{ site.url }}{{ post.url }}">
     <img src="http://fakeimg.pl/450x200/" />
     </a>
     </div><!-- .post-thumb -->
