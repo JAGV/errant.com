@@ -3,4 +3,10 @@ server: true
 permalink: /docs/:categories/:title
 pygments: false
 gauges_id: 503c5af6613f5d0f19000027
+
+# Unfortunately because of a lack of a URL the logo "home" doesn't work
+# This is a bit of a pain during development, but workable
+
+# Development URL on the FTP
+# Uncomment before building if you wish to deploy to the server
 # url: http://errantmagazine.ca/dev
