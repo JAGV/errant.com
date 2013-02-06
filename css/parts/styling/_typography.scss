@@ -43,15 +43,18 @@
     margin-top: 0.25em;
     margin-bottom: 0.25em;
  }
+
  .post-date {
     margin-top: $half-spacing-unit;
     margin-bottom: 0;
  }
+
  .excerpt {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.4;
  }
+
  .home--blog-roll {
     text-align: center;
 
@@ -60,12 +63,9 @@
       content: ". . .";
     }
 
-    .post--hero {
-      //font-size: 140%;
-      &:after {
+    .post--hero:after {
         font-size: 180%;
         content: "\2235";
-      }
     }
 
  }
@@ -99,6 +99,11 @@
   font-style: italic;
 }
 
+
+.category-list {
+  font-size: 80%;
+}
+
 /**
  * Share title
  */
@@ -114,7 +119,6 @@
     &:hover {
       color: $brand-secondary;
     }
- 
  }
 
 blockquote {

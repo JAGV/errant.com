@@ -54,4 +54,27 @@
     line-height: 1;
  }
 
+
+/**
+ * Blog Objects
+ */
+ .blog-roll {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .post {
+    padding-bottom: 0.75em;
+    margin-bottom: $spacing-unit;
+    z-index: 1;
+  }
+
+  .post--hero {
+    margin-bottom: 2em;
+  }
+
+  .post--in-category {
+    border-bottom: 1px solid $light-grey;
+  }
+
  

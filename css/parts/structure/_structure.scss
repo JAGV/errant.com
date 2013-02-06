@@ -59,21 +59,6 @@
  /**
   * Blog Roll
   */
-  .blog-roll {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .post {
-    padding-bottom: 0.75em;
-    margin-bottom: $spacing-unit;
-    z-index: 1;
-  }
-
-  .post--hero {
-    margin-bottom: 2em;
-  }
-
   .post__meta {
     position: relative;
     padding-top: $half-spacing-unit;
@@ -103,7 +88,7 @@
       width: 100%;
       height: auto;
    }
-   
+
    *
    **/
 
