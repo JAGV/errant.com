@@ -4,12 +4,17 @@
  */
 
 @media screen and (min-width: 48em) { /* this width is arbitrary */
-    /**
-     * Experiments for full layout
-    */
-    .article--title {
-      
-      .article--name {
+    
+    .article__title {
+      position: relative;
+      max-width: 40em;
+      padding: 2em;
+      margin-top: -3em;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: $rev;
+
+      .article-name {
         border-top: 1px solid;  
         padding-top: $half-spacing-unit;
       }
@@ -18,14 +23,6 @@
         border-bottom: 1px solid;
         padding-bottom: $half-spacing-unit;
       }
-      
-      padding: 2em;
-      position: absolute;
-      top: 25%;
-      right: 15%;
-      left: 15%;
-      //color: $rev;
-      background-color: rgba(255, 255, 255, 0.6);
     }
 
 }/* end 60em media query */

@@ -3,26 +3,24 @@
     
     <div class="article  full-width">
     
-    <div class="article--cover">
-        
-        <div class="bottom-shadow">
-            <img src="{{ site.url }}{{ page.image }}" />
-        </div><!-- .bottom-shadow -->
-        
-        <div class="article--title">
-            <h1 class="article--name">{{ page.title }}</h1>
-            <h2 class="article--author">{{ page.author }}</h2>
-            <p class="post-date">{{ page.date | date_to_string }}</p>
-        </div><!-- .article-title -->
-        
-    </div><!-- .article-cover -->
+    <div class="bottom-shadow">
+        <img src="{{ site.url }}{{ page.image }}" />
+    </div><!-- .bottom-shadow -->
+    
+    <div class="article__title">
+        <h1 class="article-name">{{ page.title }}</h1>
+        <h2 class="article-author">{{ page.author }}</h2>
+        <p class="post-date">{{ page.date | date_to_string }}</p>
+    </div><!-- .article-title -->
     
     {% include share.html %}
-    <div class="article--body">
+    
+    <div class="article__body">
         
     {{ content }}
     
-    </div><!-- .article--body -->
+    </div><!-- .article__body -->
+    
     {% include share.html %}
     
     <h4>Latest Articles</h4>
@@ -43,7 +41,7 @@
             <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
             <p class="excerpt">{{ post.excerpt }}</p>
         </li><!-- .post -->
-        </div><!-- .sm-quarter -->
+        </div><!-- .grid-cold -->
         
         {% endfor %}
         </ul><!-- .blog-roll -->

@@ -33,6 +33,25 @@
   .bottom-shadow {
     @include box-shadow(0 8px 6px -6px $light-grey);
   }
+  .round-thumb {
+    opacity: 0.6;
+
+    @include transition(all 0.5s);
+    @include border-radius(10em);
+  }
+
+  .post:hover .round-thumb {
+    opacity: 1;
+  }
+
+  .post--hero {
+    border-bottom: 1px solid $light-grey;
+  }
+
+  .post__meta {
+    background-color: $rev;
+  }
+
 
 /**
  * Footer
