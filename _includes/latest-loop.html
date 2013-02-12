@@ -1,0 +1,25 @@
+<h4>Latest Articles</h4>
+    <div class="grid-wrap">
+        <ul class="blog-roll  nav  nav--stacked">
+        {% for post in site.posts limit:4 %}
+        
+        <div class="grid-col  bp1-col-one-half  bp2-col-one-quarter">
+        
+        <li class="post  other--post">
+            <div class="post-thumb">
+            <a href="{{ site.url }}{{ post.url }}">
+            <img src="{{ site.url }}{{ post.thumbnail }}" />
+            </a>
+            </div><!-- .post-thumb -->
+            
+            <div class="post__meta">
+            <p class="post-date">{{ post.date | date_to_string }}</p>
+            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="excerpt">{{ post.excerpt }}</p>
+            </div>
+        </li><!-- .post -->
+        </div><!-- .grid-col -->
+        
+        {% endfor %}
+        </ul><!-- .blog-roll -->
+    </div><!-- .grid-wrap -->

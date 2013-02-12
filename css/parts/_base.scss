@@ -22,13 +22,13 @@ button,
 input,
 select,
 textarea {
-    color: $brand-color;
+    color: lighten($brand-color, 10%);
     font-family: $brand-secondary-face;
 }
 
 body {
     font-size: 1em;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 /**

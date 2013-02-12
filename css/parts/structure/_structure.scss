@@ -100,13 +100,20 @@
  .article__title {
     position: relative;
     padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
  }
 
  .article__body {
     max-width: 40em;
     margin: $spacing-unit auto 0 auto;
  }
+
+.article__photo-body {
+  text-align: center;
+}
+
+.article__photo-body img {
+  margin-bottom: $spacing-unit;
+}
 
  .share-page {
     margin-top: $spacing-unit;

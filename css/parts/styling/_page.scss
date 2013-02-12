@@ -36,8 +36,9 @@
   .round-thumb {
     opacity: 0.6;
 
+    //max-width: 15em;
     @include transition(all 0.5s);
-    @include border-radius(10em);
+    @include border-radius(50em);
   }
 
   .post:hover .round-thumb {
